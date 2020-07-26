@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FloatingBottomNavigation">
+        <attr name="maxFloat" format="dimension"/>
+        <attr name="dividerPadding" format="dimension"/>
+        <attr name="dividerHeight" format="dimension"/>
+    </declare-styleable>
+</resources>

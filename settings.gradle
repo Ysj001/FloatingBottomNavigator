@@ -1,2 +1,3 @@
+include ':floatingbottomnavigation'
 include ':app'
 rootProject.name = "FloatingBottomNavigator"
