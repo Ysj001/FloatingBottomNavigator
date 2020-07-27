@@ -1,34 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFD791"
+    android:background="#FF9800"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="16dp"
+        android:background="@drawable/cc"
+        android:onClick="onDebugClick"
+        android:padding="16dp"
+        android:text="debug off"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvMultiple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cc"
+            android:padding="8dp"
+            android:textColor="#fff" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/cc"
+            android:gravity="center"
+            android:onClick="onMaxMultiplePlus"
+            android:text="+"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/cc"
+            android:gravity="center"
+            android:onClick="onMaxSizeMinus"
+            android:text="-"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvMaxFloating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cc"
+            android:padding="8dp"
+            android:textColor="#fff" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/cc"
+            android:gravity="center"
+            android:onClick="onMaxFloatingPlus"
+            android:text="+"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/cc"
+            android:gravity="center"
+            android:onClick="onMaxFloatingMinus"
+            android:text="-"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvDividerStrokeWidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cc"
+            android:padding="8dp"
+            android:textColor="#fff" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/cc"
+            android:gravity="center"
+            android:onClick="onDividerStrokeWidthPlus"
+            android:text="+"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/cc"
+            android:gravity="center"
+            android:onClick="onDividerStrokeWidthMinus"
+            android:text="-"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvBottomNavHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cc"
+            android:padding="8dp"
+            android:textColor="#fff" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/cc"
+            android:gravity="center"
+            android:onClick="onBottomNavHeightPlus"
+            android:text="+"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/cc"
+            android:gravity="center"
+            android:onClick="onBottomNavHeightMinus"
+            android:text="-"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/cc"
+        android:onClick="onResetClick"
+        android:padding="16dp"
+        android:text="reset"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <com.ysj.ui.floatingbottomnavigation.FloatingBottomNavigation
         android:id="@+id/bottomNav"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="68dp"
         android:background="@mipmap/bg_bottom"
         android:gravity="center_vertical"
-        app:dividerHeight="3dp"
-        app:dividerPadding="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:maxFloat="16dp">
+        app:dividerColor="#4CAF50"
+        app:dividerStrokeWidth="3dp"
+        app:maxFloating="16dp">
 
         <FrameLayout
             android:layout_width="0dp"
@@ -42,14 +221,13 @@
                 android:layout_gravity="center_horizontal|bottom"
                 android:layout_marginBottom="18dp"
                 android:background="@drawable/cc"
-                android:onClick="test" />
+                android:onClick="onNavClick" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|bottom"
-                android:layout_marginTop="4dp"
-                android:text="首页"
+                android:text="PAGE A"
                 android:textColor="#fff" />
         </FrameLayout>
 
@@ -57,8 +235,7 @@
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center_horizontal">
+            android:layout_weight="1">
 
             <View
                 android:id="@+id/view2"
@@ -66,15 +243,14 @@
                 android:layout_height="28dp"
                 android:layout_gravity="center_horizontal|bottom"
                 android:layout_marginBottom="18dp"
-                android:background="#A44C4C4C"
-                android:onClick="test" />
+                android:background="@drawable/cc"
+                android:onClick="onNavClick" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|bottom"
-                android:layout_marginTop="4dp"
-                android:text="广场"
+                android:text="PAGE B"
                 android:textColor="#fff" />
         </FrameLayout>
 
@@ -91,17 +267,16 @@
                 android:layout_gravity="center_horizontal|bottom"
                 android:layout_marginBottom="18dp"
                 android:background="@drawable/cc"
-                android:onClick="test" />
+                android:onClick="onNavClick" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|bottom"
-                android:layout_marginTop="4dp"
-                android:text="我的"
+                android:text="PAGE C"
                 android:textColor="#fff" />
         </FrameLayout>
 
     </com.ysj.ui.floatingbottomnavigation.FloatingBottomNavigation>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
