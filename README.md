@@ -1,12 +1,12 @@
 ## FloatingBottomNavigation
 
-这个一个浮动溢出效果的底部导航控件
+这个一个浮动溢出效果的底部导航控件。通过自动识别控件所包裹并绑定的 View 的大小，来实现溢出曲线的绘制，以达到良好的解耦并便于自定义。 你可以通过 Demo 中的各种参数设置来帮助你快速熟悉使用以便实现需求。
 
 ### 效果图：
 
 |debug-off|                           debug-on                           |
 |:---:|:---:|
-|![debug-off](https://github.com/Ysj001/FloatingBottomNavigator/blob/master/screenshots/1.gif)|![debug-on](https://github.com/Ysj001/FloatingBottomNavigator/blob/master/screenshots/2.gif)|
+|![debug-off](https://img-blog.csdnimg.cn/20200727225604910.gif)|![debug-on](https://img-blog.csdnimg.cn/20200727225640434.gif)|
 ### 功能描述
 
 - 能够自动识别控件包裹并绑定的 View 的大小
